@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hello/screen_api_get.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_hello/screen_api_get.dart';
+import 'package:flutter_hello/screen_api_post.dart';
 
 void main() => runApp(MyApp());
 
@@ -158,7 +159,12 @@ class MyHomePage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ScreenAPIPost()));
+                      },
                     )
                   ],
                 )),
